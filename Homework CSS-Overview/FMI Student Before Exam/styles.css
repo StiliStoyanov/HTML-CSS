@@ -1,0 +1,92 @@
+
+div{
+    display: inline-block;
+    border: solid 2.5px black;
+    padding: 0;
+    margin: 0;
+}
+
+.head{
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.face {
+    border: none;
+    position: relative;
+    top: 80px;
+    left: 32px;
+}
+
+.eyes{
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 40px;
+}
+
+.pupil{
+    background: black;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.eyes:first-child .pupil{
+    position: relative;
+    top: 38.4px;
+    left: 16px;
+}
+
+.eyes:last-child .pupil{
+    position: relative;
+    right: 28.8px;
+}
+
+.nose{
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    background: red;
+    border-radius: 50%;
+}
+
+.mouth{
+    width: 192px;
+    height: 72px;
+    display: inline-block;
+    background: white;
+    border-radius: 36px;
+    margin: 12.8px;
+}
+
+.tooth{
+    width: 32px;
+    height: 40px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none;
+    position: relative;
+    left: 1.6px;
+}
+
+.tooth:first-child{
+    position: relative;
+    left: 4.8px;
+}
+
+.tooth:last-child{
+    position: relative;
+    right: 4px;
+}
+
+
+.new-line{
+    display: block;
+    text-align: center;
+    border: none;
+}
