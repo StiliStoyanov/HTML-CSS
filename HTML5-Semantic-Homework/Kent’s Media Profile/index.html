@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem 2.Kent's Media Profile</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Kent's Media Profile</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Profile</h2>
-    <div class="container">
-        <p>User: Kent</p>
-        <img src="ken.png" alt="ken">
-        <br>
-        <label for="profile">Profile completed 60%</label><br>
-       <meter id="profile-perc" value="0.6">60%</meter>
-    </div>
-    <div class="container">
-        <p>Uploaded Audio Files</p>
-        <audio controls>
-            <source src="cat.mp3" type="audio/mpeg" />
-        </audio><br>
-        <audio controls>
-            <source src="cat.mp3" type="audio/mpeg" />
-        </audio><br>
-        <audio controls>
-            <source src="cat.mp3" type="audio/mpeg" />
-        </audio>
-    </div>
-    <div class="container">
-        <p>Uploaded Video Files</p>
-        <video width="300" height="300" src="catVideo.mp4" controls allowFul></video>
-    </div>
+	<main>
+		<header>
+			<h1>Profile</h1>
+		</header>
+
+		<section>
+			<h3>User: Kent</h3>
+			<figure>
+				<img src="ken.png" alt="ken photo">
+				<figcaption>Profile completed 60%</figcaption>
+			</figure>
+			<meter value="0.6"></meter>
+		</section>
+
+		<section>
+			<h3>Uploaded Audio Files</h3>
+			<embed src="cat.mp3" type="audio/mpeg">
+
+		    <audio controls>
+		    	<source src="cat.mp3" type="audio/mpeg">Your browser does not support the &lt;audio&gt; tag.
+	    	</audio>
+			
+			 <audio controls>
+                <source src="cat.mp3" type="audio/mpeg">
+                Your browser does not support the &lt;audio&gt; tag.
+       		 </audio>
+			
+			<audio controls>
+                <source src="cat.mp3" type="audio/mpeg">
+                Your browser does not support the &lt;audio&gt; tag.
+       		</audio>
+		</section>
+
+		<section id="videos">
+			<h3>Uploaded Video Files</h3>
+			<video height="255" width="440" controls>
+            <source src="catVideo.mp4" type="video/ogg">
+            <track src="http://www.jwplayer.com/wp-content/uploads/html5/assets/captions.vtt" kind="subtitles"  srclang="en" label="English">
+            Your browser does not support the video tag.
+    		</video>
+		</section>
+
+	</main>
 </body>
 </html>
