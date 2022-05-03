@@ -29,3 +29,15 @@
  border-width: 1px;
  background: #dbdddc;
 }
+#news{
+	margin-left: 35px;
+    float: left;
+    width: 55%;
+}
+#caption{
+	word-spacing: 2px;
+	font-size: 80%;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	color: #777777;
+}
