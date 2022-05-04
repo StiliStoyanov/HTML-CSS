@@ -45,7 +45,10 @@ section{
     float: left;
     width: 55%;
 }
-
+section .blue {
+	color: #605EA7;
+	padding-top: 20px;
+}
 #caption{
 	word-spacing: 2px;
 	font-size: 80%;
