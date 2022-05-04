@@ -41,3 +41,7 @@
 	margin-bottom: 20px;
 	color: #777777;
 }
+#left {
+    float: left;
+    width: 20%;
+}
