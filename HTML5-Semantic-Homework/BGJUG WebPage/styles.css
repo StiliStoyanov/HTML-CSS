@@ -60,3 +60,8 @@ section .blue {
     float: left;
     width: 20%;
 }
+.submit{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: top;
+}
