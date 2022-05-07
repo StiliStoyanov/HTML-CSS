@@ -43,22 +43,36 @@ aside ul li {
 section{
 	margin-left: 35px;
     float: left;
-    width: 55%;
+    width: 50%;
 }
 section .blue {
 	color: #605EA7;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
-#caption{
+.caption{
 	word-spacing: 2px;
 	font-size: 80%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: #777777;
 }
+#main-news-hr{
+	width: 100%;
+}
+.right-hr{
+	width: 80%;
+}
 #left {
     float: left;
     width: 20%;
+}
+#right {
+    float: right;
+    width: 20%;
+}
+aside .grey {
+    color: #AFAFAF;
 }
 .submit{
     width: 1.5rem;
