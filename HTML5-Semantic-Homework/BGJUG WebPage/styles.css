@@ -71,11 +71,28 @@ section .blue {
     float: right;
     width: 20%;
 }
-aside .grey {
+.grey {
     color: #AFAFAF;
+	font-size: 80%;
+	padding-top: 20px;
+
 }
 .submit{
     width: 1.5rem;
     height: 1.5rem;
     vertical-align: top;
+}
+#small-footer{
+	background-color: #f7f7f7;
+	position:absolute;
+   bottom:-50px;
+   width:80%;
+   height:38px; 
+}
+#small-footer-text{
+	color: #AFAFAF;
+	font-size: 17px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 20px;
 }
