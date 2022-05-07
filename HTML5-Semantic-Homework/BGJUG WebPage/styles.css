@@ -40,6 +40,16 @@ aside ul li {
     margin-bottom: 10px;
     color: #605EA7;
 }
+input{
+	margin-left: 420px;
+	height: 20px;
+	border-width: 1px;
+}
+.icon-rtl {
+	padding-right: 25px;
+	background: url("search.png") no-repeat right;
+	background-size: 20px;
+  }
 section{
 	margin-left: 35px;
     float: left;
@@ -61,7 +71,7 @@ section .blue {
 	width: 100%;
 }
 .right-hr{
-	width: 80%;
+	width: 68%;
 }
 #left {
     float: left;
