@@ -8,3 +8,9 @@ body{
     font-size: 1.3rem;
     margin: 0 auto;
 }
+header nav ul li{
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 10px;
+    border: solid 1px #000;
+}
