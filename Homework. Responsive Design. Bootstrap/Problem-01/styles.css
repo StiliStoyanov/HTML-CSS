@@ -14,3 +14,9 @@ header nav ul li{
     margin-right: 10px;
     border: solid 1px #000;
 }
+section article{
+    background-color: #E0EAFE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #000;
+}
