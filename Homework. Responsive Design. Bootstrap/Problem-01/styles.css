@@ -34,3 +34,22 @@ body{
     width: 25%;
     height: 25%;
 }
+#wrapper header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#wrapper header nav ul li {
+    width: 150px;
+    background-color: #EB2A7B;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border: solid 1px #000;
+}
+
+#wrapper header nav ul li a {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
