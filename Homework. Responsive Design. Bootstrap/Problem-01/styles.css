@@ -148,37 +148,12 @@ body {
     text-decoration: underline;
 }
 
-@media (max-width: 960px) {
-    #wrapper {
-        width: 100%;
-    }
+@media all and (max-width: 960px) and (min-width: 780px) {
+	#wrapper {
+		width: 100% !important;
+	}
 }
 
-@media (max-width: 780px) {
-
-    .left{
-        display: block;
-    }
-
-}
-
-@media (max-width: 640px) {
-
-    #wrapper header h1 a span {
-        display: block;
-    }
-
-    #wrapper header h1 a {
-        display: block;
-        text-align: center;
-    }
-
-    #wrapper section article div img {
-        /*flex-basis: 48%;*/
-        width: 48%;
-        height: 48%;
-    }
-}
 
 
 
