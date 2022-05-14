@@ -154,6 +154,41 @@ body {
 	}
 }
 
+@media all and (max-width: 780px) and (min-width: 640px) {
+	#wrapper {
+		width: 92% !important;
+	}
+
+		body #wrapper section {
+			width: 100%;
+			flex: 2 0px;
+			order: 1;
+		}
+
+		body #wrapper aside {
+			width: 93%;
+		}
+
+			#wrapper aside div ul li {
+				float: left;
+				width: 20%;
+				margin-right: 25px;
+				text-align: center;
+			}
+
+		#wrapper aside.left {
+			order: 2;
+		}
+
+		#wrapper aside.right {
+			order: 3;
+		}
+
+		#wrapper footer {
+			order: 4;
+		}
+
+}
 
 
 
