@@ -124,4 +124,49 @@ body {
     line-height: 28px;
     color: #fff;
 }
+
+.about {
+  background-color: #fff;
+  padding-top: 80px;
+}
+
+.about .titlepage {
+  text-align: left;
+  padding-bottom: 0;
+  max-width: 443px;
+  width: 100%;
+  float: left;
+}
+
+.about .titlepage h2 {
+  margin-bottom: 25px;
+}
+
+.about .titlepage p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #090808;
+}
+
+.about_img {
+  overflow: hidden;
+}
+
+.about_img figure {
+  margin: 0;
+}
+
+.about_img figure img {
+  padding-bottom: 80px;
+  padding-right: 50px;
+  max-width: 550px;
+  max-height: 550px;
+  transition: all .5s;
+  float: right;
+}
+
+.about_img figure img:hover {
+  transform: scale(1.15);
+}
   
