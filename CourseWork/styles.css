@@ -90,7 +90,7 @@ body {
 
 
   .banner_text {
-    position: absolute;
+    position: absolute; 
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
@@ -139,14 +139,19 @@ body {
 }
 
 .about .titlepage h2 {
+  font-size: 40px;
   margin-bottom: 25px;
+  padding-left: 40px;
 }
 
 .about .titlepage p {
+  width: 620px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   color: #090808;
+  padding-left: 40px;
+
 }
 
 .about_img {
@@ -160,8 +165,8 @@ body {
 .about_img figure img {
   padding-bottom: 80px;
   padding-right: 50px;
-  max-width: 550px;
-  max-height: 550px;
+  max-width: 480px;
+  max-height: 480px;
   transition: all .5s;
   float: right;
 }
