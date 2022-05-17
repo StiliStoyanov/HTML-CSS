@@ -179,16 +179,14 @@ body {
   text-align: center;
   color: #fff;
 }
- .trainers .titlepage {
-  text-align: center;
-}
 .trainer-container{
-  width: 300px;
-  height: 400px;
+  margin-left: 20px;
+  width: 28%;
   display: inline-block;
-  text-align: center;
-  margin-left: 100px;
-  
+}
+.trainer_img img{
+  max-width:100%;
+  max-height:100%;
 }
 .trainers {
   background: url(images/tra_bg.jpg);
@@ -198,5 +196,9 @@ body {
   margin-top: 60px;
   height: 530px;
 
+}
+.trainer-container:hover {
+  background-color: #fff;
+  transition: ease-in all 0.5s;
 }
   
