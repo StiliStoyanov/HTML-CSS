@@ -174,13 +174,19 @@ body {
 .about_img figure img:hover {
   transform: scale(1.15);
 }
-
+.trainers-titlepage h2{
+  font-size: 32px;
+}
+.trainers-titlepage p{
+  font-size: 25px;
+}
 .trainers, .trainers-titlepage {
   font-weight: 400;
   padding-bottom: 60px;
   text-align: center;
   color: #fff;
 }
+
 .trainer-container{
   margin-left: 25px;
   width: 25%;
