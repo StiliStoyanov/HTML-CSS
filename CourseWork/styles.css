@@ -182,19 +182,18 @@ body {
 }
 .trainers, .trainers-titlepage {
   font-weight: 400;
-  padding-bottom: 60px;
   text-align: center;
   color: #fff;
 }
 
 .trainer-container{
-  margin-left: 25px;
+  margin-left: 35px;
   width: 25%;
   display: inline-block;
 }
 .trainer_img img{
-  max-width:100%;
-  max-height:100%;
+ max-width: 100%;
+ max-height: 100%;
 }
 .trainers {
   background: url(images/tra_bg.jpg);
