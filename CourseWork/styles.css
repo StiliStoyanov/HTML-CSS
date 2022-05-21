@@ -253,7 +253,14 @@ body {
 /** form section**/
 .booking-form{
   width: 45%;
-  padding: 50px;
+  padding-left: 100px;
+}
+.booking-title{
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 550;
+  text-align: center;
+  color: #00274a;
 }
 
 div.elem-group {
@@ -263,7 +270,6 @@ div.elem-group {
 div.elem-group.inlined {
   width: 49%;
   display: inline-block;
-  float: left;
   margin-left: 1%;
 }
 
@@ -275,8 +281,8 @@ label {
 }
 
 input, select, textarea {
-  border-radius: 2px;
-  border: 2px solid #777;
+  border-radius: 8px;
+  border: 1.5px solid #00274a;
   box-sizing: border-box;
   font-size: 1.25em;
   font-family: 'Nanum Gothic';
@@ -290,7 +296,8 @@ div.elem-group.inlined input {
 }
 
 textarea {
-  height: 250px;
+  max-height: 300px;
+  max-width: 100%;
 }
 
 hr {
