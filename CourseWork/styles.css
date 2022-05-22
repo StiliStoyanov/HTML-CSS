@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Helvetica;
   margin: 0;
@@ -12,7 +15,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-.site-header {
+#site-header {
   border-bottom: 1px solid #ccc;
   padding: 0.5em 1em;
   display: flex;
@@ -124,12 +127,12 @@ a {
   color: #fff;
 }
 
-.about {
+#about {
   background-color: #fff;
   padding-top: 80px;
 }
 
-.about .titlepage {
+#about .titlepage {
   text-align: left;
   padding-bottom: 0;
   max-width: 443px;
@@ -137,13 +140,13 @@ a {
   float: left;
 }
 
-.about .titlepage h2 {
+#about .titlepage h2 {
   font-size: 40px;
   margin-bottom: 25px;
   padding-left: 40px;
 }
 
-.about .titlepage p {
+#about .titlepage p {
   width: 620px;
   font-weight: 400;
   font-size: 18px;
@@ -179,7 +182,7 @@ a {
   padding-bottom: 25px;
   font-size: 25px;
 }
-.trainers,
+#trainers,
 .trainers-titlepage {
   font-weight: 400;
   text-align: center;
@@ -196,7 +199,7 @@ a {
   height: 15em;
   width: 100%;
 }
-.trainers {
+#trainers {
   background: url(images/tra_bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -212,13 +215,13 @@ a {
 }
 /** gallery  section **/
 
-.gallery {
+#gallery {
   background-color: #00274a;
   margin-top: 80px;
   padding: 10px 0 30px 0;
 }
 
-.gallery .titlepage h2 {
+#gallery .titlepage h2 {
   margin-bottom: 70px;
   font-size: 40px;
   font-weight: 500;
@@ -226,22 +229,22 @@ a {
   color: #fff;
 }
 
-.gallery .titlepage h2::before {
+#gallery .titlepage h2::before {
   background-color: #000;
   top: 65px;
 }
-.gallery {
+#gallery {
   overflow: hidden;
   margin-bottom: 30px;
   transition: ease-in all 0.4s;
 }
 
-.gallery .gallery_img:hover {
+#gallery .gallery_img:hover {
   transform: scale(1.07);
   transition: ease-in all 0.3s;
 }
 
-.gallery .gallery_images img {
+#gallery .gallery_images img {
   padding-left: 55px;
   width: 27%;
   transition: ease-in all 0.3s;
@@ -250,7 +253,7 @@ a {
 }
 
 /** form section**/
-.booking-form {
+#booking-form {
   width: 45%;
   padding-left: 80px;
   display: inline-block;
