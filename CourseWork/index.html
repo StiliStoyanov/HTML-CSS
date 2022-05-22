@@ -9,16 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <script src="slider.js"></script>
+    <script src="scroll.js" ></script>
     <title>StayFIT</title>
 </head>
 <body>
+  
     <header class="site-header">
         <div class="site-identity">
          <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
         </div>  
         <nav class="site-navigation">
           <ul class="nav">
-            <li><a href="#">Начало</a></li> 
+            <li onclick="myFunction()">За нас</li> 
             <li><a href="#">За нас</a></li> 
             <li><a href="#">Треньори</a></li> 
             <li><a href="#">Галерия</a></li> 
@@ -49,9 +51,10 @@
                </div>
             </div>
          </div>
-         <div class="about">
-                     <div class="titlepage">
+         <div class ="about">
+                     <div class ="titlepage">
                         <h2>За нас</h2>
+                        
                         <p>Фитнесите StayFIT не са просто зали за тренировки, нито обикновени спа комплекси. 
                            StayFIT са единствените по рода си у нас лайфстайл клубове – места, в които заедно със своите
                             клубни членове осъществяваме общото си виждане за пълноценен живот. Какво е то? Да постигаме промяна,
@@ -172,17 +175,20 @@
          </div>
          <div class="contacts">
             <h3>Контакти</h3>
-                     <ul >
-                        <li>Адрес: ул. „Цанко Дюстабанов“ 63, Пловдив </li>
+                     <ul id="contacts-address" >
+                       
+                        <li >Адрес: ул. „Цанко Дюстабанов“ 63, Пловдив</li>
                         <li>Телефон: 088 470 9225 </li>
                         <li>Имейл: stay_fit@gmail.com  </li>
                      </ul>
+                     
          </div>
+      
          <div class="news-subs">
-            <h3>News letter</h3>
+            <h3>Бюлетин</h3>
             <form class="bottom_form">
-               <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-               <button class="sub_btn">subscribe</button>
+               <input class="enter" placeholder="Въведи своя имейл" type="text" name="Enter your email">
+               <button class="sub_btn">Абонирай се</button>
             </form>
          </div>
       </footer>

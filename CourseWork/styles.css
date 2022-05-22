@@ -343,39 +343,53 @@ footer {
   margin-top: 80px;
   padding-top: 30px;
 }
-footer h3{
+footer h3 {
+  padding-left: 35px;
   color: #fff;
   font-size: 35px;
   font-weight: 550;
-  text-align: center;
+  text-align: left;
 }
-.link-menu{
+.link-menu {
+  width: 25%;
   vertical-align: top;
   display: inline-block;
-  padding-left: 70px;
+  padding-left: 55px;
   margin-bottom: 40px;
 }
-.contacts,.news-subs{
+.contacts,
+.news-subs {
+  width: 25%;
   vertical-align: top;
   display: inline-block;
   padding-left: 80px;
-margin-bottom: 40;
-
+  margin-bottom: 40;
 }
-.link-menu ul li{
+.link-menu ul li {
+  text-align: left;
   list-style-type: none;
   color: #fff;
-  padding-top: 10px;
-  font-size: 20px;
+  padding-top: 20px;
+  font-size: 30px;
 }
-.link-menu ul li a{
+.link-menu ul li a {
+  text-align: left;
   color: #fff;
   font-size: 20px;
 }
 .contacts ul li {
+  display: inline-block;
   list-style-type: none;
   color: #fff;
   font-size: 20px;
-  padding-top: 10px;
-
+  padding-top: 30px;
+}
+.bottom_form {
+  padding-left: 35px;
+}
+.sub_btn {
+  margin-top: 30px;
+}
+.contacts-container {
+  display: inline-block;
 }
