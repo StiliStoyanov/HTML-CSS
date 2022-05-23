@@ -22,6 +22,13 @@ a {
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.site-navigation ul li a{
+  text-transform: uppercase;
+}
+.site-navigation ul li a:hover{
+  color: #00274a;
+  border-bottom: #00274a solid 3px;
+}
 .site-navigation ul,
 .site-navigation li {
   margin: 0;
@@ -31,7 +38,7 @@ a {
 .site-navigation li {
   font-family: "Koulen", cursive;
   font-size: 18px;
-  padding-right: 50px;
+  padding-right: 30px;
   display: inline-block;
   margin: 1.7em 1em 1em 1em;
 }
@@ -375,14 +382,17 @@ footer h3 {
   padding-top: 20px;
   font-size: 30px;
 }
+.link-menu ul li a:hover {
+  border-bottom: #fff solid 2px;
+}
 .link-menu ul li a {
   text-align: left;
   color: #fff;
   font-size: 20px;
 }
-.contacts ul li {
+
+.contacts ul li{
   display: inline-block;
-  list-style-type: none;
   color: #fff;
   font-size: 20px;
   padding-top: 30px;
