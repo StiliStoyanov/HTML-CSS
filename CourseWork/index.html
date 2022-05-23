@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <script src="slider.js"></script>
     <script src="scroll.js" ></script>
+    <script src="validate.js"></script>
     <title>StayFIT</title>
 </head>
 <body>
@@ -31,10 +32,10 @@
       <main>
          <div id="slider">
             <ul id="slideWrap"> 
+               <li><img src="images/banner2.jpg" alt=""></li>
+               <li><img src="images/banner4.jpg" alt=""></li>
                 <li><img src="images/banner1.jpg" alt=""></li>
-                <li><img src="images/banner2.jpg" alt=""></li>
                 <li><img src="images/banner3.jpg" alt=""></li>
-                <li><img src="images/banner4.jpg" alt=""></li>
               </ul>
         </div>
         <div class="banner_text">
@@ -120,14 +121,14 @@
             <div class="booking-title">
                <p>Запази час за безплатна тренировка</p>
             </div>
-            <form action="index.html" method="post">
+            <form name="myForm" action="index.html" method="post" onsubmit="return validateForm()">
                <div class="elem-group">
                  <label for="name">Име</label>
-                 <input type="text" id="name" name="visitor_name" placeholder="Вашето име" pattern=[A-Z\sa-z]{3,20} required>
+                 <input type="text" id="name" name="visitor_name" placeholder="Вашето име">
                </div>
                <div class="elem-group">
                   <label for="secondName">Фамилия</label>
-                  <input type="text" id="secondName" name="visitor_secondName" placeholder="Вашато фамилия" pattern=[A-Z\sa-z]{3,20} required>
+                  <input type="text" id="secondName" name="visitor_secondName" placeholder="Вашато фамилия">
                 </div>
                <div class="elem-group">
                  <label for="email">Имейл</label>
@@ -135,7 +136,7 @@
                </div>
                <div class="elem-group">
                  <label for="phone">Телефон</label>
-                 <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                 <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" required>
                </div>
                <div class="elem-group">
                   <label for="password">Парола</label>
@@ -148,7 +149,7 @@
                </div>
                <div class="elem-group">
                  <label for="message">Нещо допълнително?</label>
-                 <textarea id="message" name="visitor_message" placeholder="Кажете ни нещо, което може да бъде важно за Вас." required></textarea>
+                 <textarea id="message" name="visitor_message" placeholder="Кажете ни нещо, което може да бъде важно за Вас." ></textarea>
                </div>
                <button type="submit">Запази час</button>
              </form>
