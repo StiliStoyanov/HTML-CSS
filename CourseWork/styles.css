@@ -1,3 +1,5 @@
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -260,6 +262,9 @@ a {
 }
 
 /** form section**/
+.swal-footer {
+  text-align: center;
+}
 #booking-form {
   width: 45%;
   padding-left: 80px;
@@ -372,7 +377,7 @@ footer h3 {
   width: 25%;
   vertical-align: top;
   display: inline-block;
-  padding-left: 80px;
+  padding-left: 50px;
   margin-bottom: 40;
 }
 .link-menu ul li {
@@ -396,6 +401,13 @@ footer h3 {
   color: #fff;
   font-size: 20px;
   padding-top: 30px;
+}
+#location-icon, #phone-icon, #email-icon{
+  padding-right: 10px;
+  max-width: 20%;
+  max-height: 20%;
+  float: left;
+  vertical-align: top;
 }
 .bottom_form {
   padding-left: 35px;

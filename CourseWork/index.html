@@ -11,6 +11,7 @@
     <script src="slider.js"></script>
     <script src="scroll.js" ></script>
     <script src="validate.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>StayFIT</title>
 </head>
 <body>
@@ -121,7 +122,7 @@
             <div class="booking-title">
                <p>Запази час за безплатна тренировка</p>
             </div>
-            <form name="myForm" action="index.html" method="post" onsubmit="return validateForm()">
+            <form name="myForm" action="index.html" method="post" onsubmit="return validateForm()" >
                <div class="elem-group">
                  <label for="name">Име</label>
                  <input type="text" id="name" name="visitor_name" placeholder="Вашето име">
@@ -177,9 +178,9 @@
          <div class="contacts">
             <h3>Контакти</h3>
                      <ul id="contacts-address" >
-                        <li>Адрес: ул. „Цанко Дюстабанов“ 63, Пловдив</li>
-                        <li>Телефон: 088 470 9225 </li>
-                        <li>Имейл: stay_fit@gmail.com  </li>
+                        <li> <img id="location-icon" src="images/location.png" alt=""> Адрес: ул. „Цанко Дюстабанов“ 63, Пловдив</li>
+                        <li> <img id="phone-icon" src="images/phone.png" alt=""> Телефон: 088 470 9225 </li>
+                        <li><img id="email-icon" src="images/email.png" alt=""> Имейл: stay_fit@gmail.com  </li>
                      </ul>      
          </div>
          <div class="news-subs">
