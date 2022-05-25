@@ -1,55 +1,63 @@
-var responsiveSlider = function() {
+document.addEventListener('DOMContentLoaded', function(){
 
-    var slider = document.getElementById("slider");
-    var sliderWidth = slider.offsetWidth;
-    var slideList = document.getElementById("slideWrap");
-    var count = 1;
-    var items = slideList.querySelectorAll("li").length;
-    var prev = document.getElementById("prev");
-    var next = document.getElementById("next");
-    
-    window.addEventListener('resize', function() {
-      sliderWidth = slider.offsetWidth;
-    });
-    
-    var prevSlide = function() {
-      if(count > 1) {
-        count = count - 2;
-        slideList.style.left = "-" + count * sliderWidth + "px";
-        count++;
+  var slideImages = document.querySelectorAll('.slide'),
+      dirRight = document.getElementById('dir-control-right'),
+      dirLeft = document.getElementById('dir-control-left'),
+      current = 0;
+  //if javascript is on apply styling
+  function jsActive(){
+      for(var i = 0; i < slideImages.length; i++){
+          slideImages[i].classList.add('slider-active');
+      }  
+  }
+  // Clear images
+  function reset(){
+      for(var i = 0; i < slideImages.length; i++){
+          slideImages[i].classList.remove('slide-is-active');
       }
-      else if(count = 1) {
-        count = items - 1;
-        slideList.style.left = "-" + count * sliderWidth + "px";
-        count++;
+  }
+  //init slider
+  function startSlide(){
+      reset();
+      slideImages[0].classList.add('slide-is-active');
+      setTimeout(function() {
+          for(var i = 0; i < slideImages.length; i++){
+              slideImages[i].classList.add('slide-transition');
+          }
+      }, 20);
+          
+  
+  }
+  
+  //slide lft
+  function slideLeft(){
+      reset();
+      slideImages[current - 1].classList.add('slide-is-active');
+      current--;
+  }
+  //slide right
+  function slideRight(){
+      reset();
+      slideImages[current + 1].classList.add('slide-is-active');
+      current++;
+  }
+  
+  dirLeft.addEventListener('click', function(){
+      if(current === 0){
+          current = slideImages.length;
       }
-    };
-    
-    var nextSlide = function() {
-      if(count < items) {
-        slideList.style.left = "-" + count * sliderWidth + "px";
-        count++;
+      slideLeft();
+  })
+  
+  dirRight.addEventListener('click', function(){
+      if(current === slideImages.length-1){
+          current = -1;
       }
-      else if(count = items) {
-        slideList.style.left = "0px";
-        count = 1;
-      }
-    };
-    
-    next.addEventListener("click", function() {
-      nextSlide();
-    });
-    
-    prev.addEventListener("click", function() {
-      prevSlide();
-    });
-    
-    setInterval(function() {
-      nextSlide()
-    }, 8000);
-    
-    };
-    
-    window.onload = function() {
-    responsiveSlider();  
-    }
+      slideRight();
+  })
+  //apply styling
+  jsActive();
+  startSlide();
+  
+  
+  });
