@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
           for(var i = 0; i < slideImages.length; i++){
               slideImages[i].classList.add('slide-transition');
           }
-      }, 20);
+      }, 2000);
           
   
   }
