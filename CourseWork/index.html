@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-   
     <title>StayFIT</title>
 </head>
 <body>
@@ -126,7 +125,7 @@
             <div class="booking-title">
                <p>Запази час за безплатна тренировка</p>
             </div>
-            <form name="myForm" action="index.html" method="post" onsubmit="return validateForm()" >
+            <form id="my-form" name="myForm" action="https://formspree.io/f/mlezzgal" method="post" onsubmit="return validateForm()" >
                <div class="elem-group">
                  <label for="name">Име</label>
                  <input type="text" id="name" name="visitor_name" placeholder="Вашето име">
@@ -157,6 +156,7 @@
                  <textarea id="message" name="visitor_message" placeholder="Кажете ни нещо, което може да бъде важно за Вас." ></textarea>
                </div>
                <button type="submit">Запази час</button>
+               <button type="reset">Изчисти</button>
              </form>
          </div>
          <div class="mapouter">
@@ -195,6 +195,7 @@
             </form>
          </div>
       </footer>
+      <script src="form.js"></script>
       <script src="slider.js"></script>
       <script src="validate.js"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

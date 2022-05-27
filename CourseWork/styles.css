@@ -378,7 +378,7 @@ button:hover {
 }
 
 footer {
-  width: 100%;
+  max-width: 100%;
   background: #00274a;
   margin-top: 80px;
   padding-top: 30px;
