@@ -6,6 +6,8 @@ html {
 body {
   font-family: Helvetica;
   margin: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 #logo {
   width: 150px;
@@ -18,12 +20,19 @@ a {
   color: #000;
 }
 #site-header {
+  max-width: 100%;
   border-bottom: 1px solid #ccc;
   padding: 0.5em 1em;
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.site-identity{
+  max-width: 100%;
+}
+.site-navigation{
+  max-width: 100%;
+} 
 .site-navigation ul li a{
   text-transform: uppercase;
 }
@@ -442,4 +451,24 @@ footer h3 {
 }
 .contacts-container {
   display: inline-block;
+}
+/** RESPONSIVE **/
+
+@media (max-width: 1023px) {
+  .site-identity{
+    display: block;
+  }
+  .site-navigation{
+    display: block;
+    
+  }
+  .site-navigation ul li a{
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  
+}
+@media (max-width: 479px) {
+  
 }
