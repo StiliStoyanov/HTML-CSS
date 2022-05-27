@@ -455,15 +455,20 @@ footer h3 {
 /** RESPONSIVE **/
 
 @media (max-width: 1023px) {
+  header{
+    max-width: 100%;
+  }
   .site-identity{
     display: block;
+    flex-direction: column;
   }
   .site-navigation{
     display: block;
-    
+    flex-direction: column;
   }
   .site-navigation ul li a{
     display: block;
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
