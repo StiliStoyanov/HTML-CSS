@@ -637,8 +637,8 @@ footer h3 {
 #gallery .gallery_images img {
   /* padding-left: 55px; */
   /* width: 27%; */
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 40px;
+  padding-left: 50px;
 }
 #booking-form{
   padding-left: 0;
