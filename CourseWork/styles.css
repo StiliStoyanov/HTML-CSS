@@ -646,6 +646,17 @@ footer h3 {
   margin-right: auto;
   display: table;
 }
+.contacts, .link-menu, .news-subs{
+  width: 33%;
+}
+.news-subs{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  padding-left: 0;
+  padding-bottom: 20px;
+}
 }
 @media (max-width: 479px) {
   
