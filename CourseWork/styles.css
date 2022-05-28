@@ -6,11 +6,11 @@ html {
 body {
   font-family: Helvetica;
   margin: 0;
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 #logo {
-  width: 150px;
+  width: 10%px;
   height: 75px;
   padding-top: 0px;
   padding-left: 30px;
@@ -175,11 +175,15 @@ background-color: #fff;
   padding-top: 80px;
 }
 
+
+.titlepage{
+  padding-left: 30px;
+}
+
 #about .titlepage {
   text-align: left;
   padding-bottom: 0;
-  max-width: 443px;
-  width: 100%;
+  max-width: 50%;
   float: left;
 }
 
@@ -190,16 +194,24 @@ background-color: #fff;
 }
 
 #about .titlepage p {
-  width: 620px;
+  max-width: 90%;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #090808;
   padding-left: 40px;
 }
-
+#about-us-img{
+  position: relative;
+  padding-left: 7%;
+  padding-top: 25px;
+  max-width: 400px;
+  max-height: 390px;
+  float: right;
+}
 .about_img {
-  overflow: hidden;
+  padding-left: 7%;
+  display: inline-block;
 }
 
 .about_img figure {
@@ -208,15 +220,15 @@ background-color: #fff;
 
 .about_img figure img {
   padding-bottom: 80px;
-  padding-right: 50px;
-  max-width: 480px;
-  max-height: 480px;
   transition: all 0.5s;
   float: right;
 }
 
 .about_img figure img:hover {
   transform: scale(1.15);
+}
+#trainers{
+  position: relative;
 }
 .trainers-titlepage h2 {
   font-size: 32px;
@@ -240,7 +252,7 @@ background-color: #fff;
 }
 .trainer_img img {
   height: 15em;
-  width: 100%;
+  max-width: 100%;
 }
 #trainers {
   background: url(images/tra_bg.jpg);
@@ -264,7 +276,7 @@ background-color: #fff;
   padding: 10px 0 30px 0;
 }
 
-#gallery .titlepage h2 {
+#gallery .titlepage2 h2 {
   margin-bottom: 70px;
   font-size: 40px;
   font-weight: 500;
@@ -272,7 +284,7 @@ background-color: #fff;
   color: #fff;
 }
 
-#gallery .titlepage h2::before {
+#gallery .titlepage2 h2::before {
   background-color: #000;
   top: 65px;
 }
@@ -374,16 +386,16 @@ button:hover {
 .mapouter {
   position: relative;
   float: right;
-  padding-right: 30px;
+  padding-right: 40px;
   padding-top: 209px;
-  height: 450px;
-  width: 500px;
+  height: 420px;
+  max-width: 35%;
 }
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 460px;
-  width: 500px;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 footer {
@@ -454,25 +466,186 @@ footer h3 {
 }
 /** RESPONSIVE **/
 
-@media (max-width: 1023px) {
-  header{
+@media (min-width: 768px) and (max-width: 1023px) {
+  body{
+    margin: 0;
+    min-width: 100%;
+  }
+  #logo {
+    padding-left: 15px;
+  }
+  .site-navigation ul li{
+    padding-right: 6px;
+    margin: 1.7em 0.7em 1em 0.7em;
+  }
+  .site-navigation ul li a{
+    display: inline-block;
+    line-height: 15px;
+    font-size: 15px;
+    padding-right: 6px;
+  }
+  .stewart span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 3px;
+    color: #feed01;
+    display: block;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+  }
+  
+  .stewart h1 {
+    display: block;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 75px;
+    color: #fff;
+  }
+  #about{
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+  vertical-align: top;
+  line-height: 1;
+  
+  }
+  .titlepage p{
+    font-size: 25px;
+  }
+  .titlepage h2{
+    text-align: center;
+  }
+  .titlepage{
+    width: 65%;
+    padding-left: 200px;
+  }
+ 
+ .about_img{
+   padding-left: 240px;
+ }
+#gallery .titlepag2{
+ margin: auto;
+  text-align: center;
+}
+ #gallery .gallery_images img {
+  /* padding-left: 55px; */
+  /* width: 27%; */
+  transition: ease-in all 0.3s;
+  margin-bottom: 30px;
+  display: inline-block;
+  max-width: 40%;
+  padding-left: 120px;
+}
+.mapouter{
+  display: none;
+}
+#booking-form{
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  padding-left: 80;
+}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  body{
+    margin: 0;
+    min-width: 100%;
+  }
+  #site-header {
+    display: block;
     max-width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 1em;
+    background-color: rgba(0, 0, 0, 0.2);
   }
   .site-identity{
     display: block;
-    flex-direction: column;
   }
-  .site-navigation{
+  #logo {
+    padding: 0;
+    text-align: center;
     display: block;
-    flex-direction: column;
+    margin: auto;
   }
-  .site-navigation ul li a{
+  .site-navigation ul li{
+    padding-right: 0;
     display: block;
-    flex-direction: column;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    margin: auto;
+    margin: 1em 0.7em 1em 0.7em;
+
   }
-}
-@media (max-width: 767px) {
+ 
+  .stewart span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 2px;
+    color: #feed01;
+    display: block;
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+  }
   
+  .stewart h1 {
+    display: block;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 55px;
+    color: #fff;
+  }
+  .mapouter{
+    display: none;
+  }
+  #about .titlepage{
+    max-width: 65%;
+    padding-left: 17%;
+  }
+  .titlepage h2{
+    text-align: center;
+  }
+  .titlepage p{
+    font-size: 25px;
+    text-align: center;
+  }
+  #about{
+    text-align: center;
+    margin: auto;
+  }
+  .trainer-container {
+    margin-left: 2%;
+    max-width: 30%;
+    max-height: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.trainer_img img {
+  height: 100%;
+  max-width: 100%;
+}
+#gallery .gallery_images img {
+  /* padding-left: 55px; */
+  /* width: 27%; */
+  padding-right: 60px;
+  padding-left: 60px;
+}
+#booking-form{
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
 }
 @media (max-width: 479px) {
   
