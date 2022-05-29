@@ -528,6 +528,7 @@ footer h3 {
  .about_img{
    padding-left: 240px;
  }
+
 #gallery .titlepag2{
  margin: auto;
   text-align: center;
@@ -548,7 +549,7 @@ footer h3 {
   margin-left: auto;
   margin-right: auto;
   display: table;
-  padding-left: 80;
+  padding-left: 0;
 }
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -623,6 +624,9 @@ footer h3 {
     text-align: center;
     margin: auto;
   }
+  .trainer-container:hover {
+    pointer-events: none;
+  }
   .trainer-container {
     margin-left: 2%;
     max-width: 30%;
@@ -688,7 +692,7 @@ footer h3 {
     margin: auto;
   }
   .wrap{
-    height: 80%;
+  height: 500px;
   }
   .banner_text{
     padding-top: 30%;
@@ -742,6 +746,9 @@ footer h3 {
 .titlepage p {
   font-size: 25px;
   text-align: center;
+}
+.trainer-container:hover {
+  pointer-events: none;
 }
 .trainer-container {
   margin-left: 2%;
