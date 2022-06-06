@@ -58,6 +58,4 @@ document.addEventListener('DOMContentLoaded', function(){
   //apply styling
   jsActive();
   startSlide();
-  
-  
   });
